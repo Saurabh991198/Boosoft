@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #fcfcfc;
+    overflow-x: hidden;
+
+}
+
+#leftbg {
+    background-color: #FFFFFF;
+}
+
+/* menu */
+#menucontent svg {
+    width: 20px;
+    height: 17px;
+}
+
+#menu {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 5px;
+}
+
+#cross {
+    display: none;
+    cursor: pointer;
+    padding-left: 5px;
+    opacity: 60%;
+}
+
+#logoimg {
+    width: 150px;
+}
+
+#hambur svg {
+    cursor: pointer;
+    display: none;
+}
+
+/* <!-- + create shipment --> */
+#cship {
+    margin: 40px 5px 50px;
+}
+
+#cship>a {
+    text-decoration: none;
+}
+
+#cship>a {
+    background-color: #f9f4f1;
+    text-align: center;
+    padding: 15px 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    opacity: 85%;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+#shipadd {
+    border-radius: 50%;
+    color: white;
+    padding: 1px 8px;
+    background-image: linear-gradient(to right, #F5564A, #F34558);
+}
+
+/* <!-- Get Quote --> */
+.menubtn a {
+    margin: 1px 5px 5px -5px;
+    color: #707198
+}
+
+.menulink {
+    box-sizing: border-box;
+    border-left: 2px solid #FFFFFF;
+    border-radius: 3px;
+    padding: 13px 20px 13px 5px;
+    display: flex;
+    opacity: 80%;
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+}
+
+.menulink:hover {
+    border-left: 2px solid #F34558;
+    color: #F5564A;
+    background-color: #f9f4f1;
+    opacity: 100%;
+}
+
+.menubtn svg {
+    color: #F5564A;
+}
+
+.menutext {
+    display: flex;
+}
+
+#mainmenu {
+    display: flex;
+    flex-direction: column;
+}
+
+/* <!-- Shipments --> */
+#shipnum {
+    border-radius: 5px;
+    padding: 4px 8px;
+    font-size: 13px;
+    font-weight: 600;
+    /* background-image: linear-gradient(to right,#fcfcfc,#eae9e9);
+    color: #707198; */
+    color: #FFFFFF;
+    background-image: linear-gradient(to right, #F5564A, #F34558);
+}
+
+/* .menulink:hover #shipnum{
+} */
+
+/* <!-- message --> */
+#message {
+    margin-left: 5px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #bfbfbf;
+    padding-bottom: 10px;
+    font-size: 13px;
+    color: white;
+}
+
+#textflex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px 20px;
+    background-image: linear-gradient(to right, #F5564A, #F34558);
+    border-radius: 5px;
+
+}
+
+#messtext {
+    color: white;
+    font-size: 11px;
+}
+
+#detail>a {
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+
+}
+
+/* <!-- ////////////////////////////////////////////////////  media query  /////////////////////////////////////////////////////////////// --> */
+
+@media screen and (max-width:667px) {
+    body {
+        background-color: #fcfcfc;
+        /* background-color: rgb(235, 185, 185) !important; */
+    }
+
+    /*  menu fixed */
+    #menu {
+        width: 100vw;
+        text-align: center;
+        position: fixed;
+        top: 0px;
+        background-color: #ffffff;
+        z-index: 4 !important;
+        box-sizing: border-box;
+    }
+
+    #menusvg {
+        cursor: pointer;
+    }
+
+    #leftbg {
+        position: relative;
+    }
+
+    /* menu */
+
+    #hambur svg {
+        width: 20px;
+        height: 15px;
+        display: flex;
+    }
+
+    #mainmenu {
+        display: none;
+        flex-direction: column;
+        z-index: 3 !important;
+        margin-top: 50px;
+        position: absolute;
+        background-color: #ffffff;
+        padding-bottom: 20px;
+
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0px;
+
+    }
+
+    #hambur {
+        order: 2;
+    }
+
+    #logo {
+        order: 1;
+    }
+
+    #message>div {
+
+        padding: 20px 0px;
+        font-size: 14px;
+
+    }
+
+    #detail>a {
+        font-size: 13px;
+    }
+
+}

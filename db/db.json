@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "name": "yellen",
+      "email": "yellen@gmail.com",
+      "passwoard": "123456",
+      "id": 1
+    },
+    {
+      "email": "abc@gmail.com",
+      "name": "saurabh",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "email": "kumar@gmail.com",
+      "name": "kumar",
+      "password": "12345",
+      "id": 3
+    },
+    {
+      "email": "om@gmail.com",
+      "name": "om",
+      "password": "123456",
+      "id": 4
+    },
+    {
+      "email": "neha@gmail.com",
+      "name": "Neha",
+      "password": "123",
+      "id": 5
+    },
+    {
+      "name": "Saurabh Jaiswal",
+      "email": "saurabh@gmail.com",
+      "passwoard": "123321",
+      "id": 6
+    }
+  ]
+}
